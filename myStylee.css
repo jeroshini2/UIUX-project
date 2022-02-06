@@ -1,0 +1,48 @@
+.tt{
+
+width:1345px;
+height:150px;
+background-color:#9f0f0f;
+padding-left:100px;
+}
+.tt a{
+color:black;
+font-size:20px;
+text-decoration:none;
+
+}
+.tt a:hover{
+color:white;
+background-color:black;
+}
+.navbar{
+	margin-left:10px;
+}
+.navbar ul
+{
+	
+display:flex;
+justify-content:center;
+padding:0;
+margin:0;
+list-style-type:none;
+background-color:white;
+}
+.navbar ul li
+{
+display:inline-block;
+}
+.navbar li a
+{
+display:block;
+color:white;
+padding:10px 20px;
+font-size:15px;
+color:#9f0f0f;
+letter-spacing:2px; 
+text-decoration:none;
+}
+.navbar ul a:hover{
+color:white;
+background-color:black;
+}

@@ -1,0 +1,137 @@
+
+body{
+margin:0;
+font-family:sans-serif;
+color:white;
+}
+.{
+box-sizing:border-box;
+}
+h1,h5
+{
+margin:0;
+}
+
+.head{
+display:flex;
+align-items:center;
+justify-content:center;
+width:100%;
+height:45vh;
+background-image:linear-gradient(#9f0f0f,#9f0f0f),url("F:/myProject/pic1.jpg");
+background-size:cover;
+background-blend-mode:multiply;
+}
+.headtext{
+color:white;
+text-align:center;
+}
+.headtext h1{
+font-size:100px;
+font-weight:500;
+}
+.headtext p{
+letter-spacing:5px;
+}
+.title {
+font-family:comic sans ms;
+text-align:center;
+}
+
+
+.rec{
+margin:50px 150px;
+font-family:san serif;
+font-size:20px;
+}
+.rec h3{
+font-family:comic sans ms;
+font-size:30px;
+text-transform:uppercase;
+}
+.rec img{
+width:500px;
+height:300px;
+
+}
+
+#fs{
+width:650px;
+margin:20px auto;
+border:solid 2px #9f0f0f;
+font-family:monospace;
+padding:20px;
+
+}
+.last{
+width:100%;
+height:50px;
+padding-top:10px;
+background-color:#9f0f0f;
+
+}
+.last a{
+color:black;
+text-decoration:none;
+margin-left:500px;
+font-size:30px;
+}
+.last a:hover{
+color:white;
+
+}
+table{
+margin-top:30px;
+
+}
+td{
+  border: 2px solid #9f0f0f;
+  width: 500px;
+  overflow: hidden;
+padding:20px;
+}
+legend{
+color:white;
+}
+.images{
+padding-left:100px;
+}
+.outer{
+background-color:#9f0f0f;
+width:100%;
+
+}
+.book{
+
+font-family: Function,trebuchet ms,Arial,sans-serif;
+font-size:20px;
+background-color:white;
+padding-bottom:50px;
+padding-top:50px;
+width:990px;
+margin-left:150px;
+}
+.book img{
+display:block;
+margin:20px auto;
+}
+
+.book a{
+color:#9f0f0f;
+padding-left:500px;
+text-decoration:none;
+}
+.book a:hover{
+color:black;
+}
+
+.book li,pre{
+color:black;
+padding:10px;
+font-family:Function,trebuchet ms,Arial,sans-serif;
+font-size:16px;
+margin-left:100px
+}
+.book form{
+margin-left:500px;
+}

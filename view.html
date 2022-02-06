@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+<link href="myStylee.css" rel="stylesheet" type="text/css" />
+<title>gallery</title>
+</head>
+<style>
+
+@keyframes change{
+25%
+{
+background:url(i1.jpg);
+background-size:cover;
+background-position:center;
+}
+50%
+{
+background:url(i3.jpg);
+background-size:cover;
+background-position:center;
+}
+75%
+{
+background:url(i4.jpg);
+background-size:cover;
+background-position:center;
+}
+100%
+{
+background:url(i5.jpg);
+background-size:cover;
+background-position:center;
+}
+}
+
+.whole
+{
+width:100%;
+height:100vh;
+background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(2.JPG);
+background-size:cover;
+background-position:center;
+padding-left:8%;
+padding-right:18%;
+box-sizing:border-box;
+
+}
+.menus
+{
+height:12%;
+align-items:center;
+}
+nav{
+float:right;
+}
+nav ul li
+{
+list-style:none;
+display:inline-block;
+margin-left:80px;
+}
+nav ul li a
+{
+text-decoration:none;
+font-size:25px;
+color:white;
+
+}
+nav ul li a:hover
+{
+color:black;
+}
+h1{
+color:white;
+font-size:80px;
+line-height:5px;
+}
+p{
+font-size:15px;
+color:white;
+line-height:18px;
+}
+.row{
+display:flex;
+align-items:center;
+height:85%;
+}
+
+.row1{
+display:flex;
+align-items:center;
+height:85%;
+}
+.col1{
+flex-basis :50%;
+overflow:hidden;
+}
+.card11{
+width:200px;
+height:230px;
+display:inline-block;
+border-radius:50px;
+padding:15px 25px;
+box-sizing:border-box;
+cursor:pointer;
+margin:10px 15px;
+background-image:url(combo1.JPG);
+background-position:center;
+background-size:cover;
+justify-content:space-around;
+}
+.card12{
+width:200px;
+height:230px;
+display:inline-block;
+border-radius:50px;
+padding:15px 25px;
+box-sizing:border-box;
+cursor:pointer;
+margin:10px 15px;
+background-image:url(combo2.JPG);
+background-position:center;
+background-size:cover;
+justify-content:space-around;
+}
+.card13{
+width:200px;
+height:230px;
+display:inline-block;
+border-radius:50px;
+padding:15px 25px;
+box-sizing:border-box;
+cursor:pointer;
+margin:10px 15px;
+background-image:url(combo3.JPG);
+background-position:center;
+background-size:cover;
+justify-content:space-around;
+}
+.card14{
+width:200px;
+height:230px;
+display:inline-block;
+border-radius:50px;
+padding:15px 25px;
+box-sizing:border-box;
+cursor:pointer;
+margin:10px 15px;
+background-image:url(combo4.JPG);
+background-position:center;
+background-size:cover;
+justify-content:space-around;
+}
+.s1
+{
+height:500px;
+width:500px;
+position:relative;
+}
+.s1 img{
+width:100%;
+height:100%;
+border-radius:50px;
+}
+.transition-image
+{
+position:absolute;
+top:0px;
+left:0px;
+opacity:0;
+transition:opacity 0.5s ease;
+
+}
+.transition-image:hover{
+opacity:1;
+}
+
+
+#b1{
+
+height:500px;
+width:500px;
+
+}
+.next2
+{
+
+display:flex;
+justify-content:space-around;
+}
+.box1{
+height:500px;
+width:400px;
+background-color:#fed8a5;
+border-radius:30px;
+}
+#im1{
+width:390px;
+    height:230px;
+padding-left:5%;
+padding-top:5%;
+border-radius:50px;
+}
+#word:hover{
+
+color:black;
+
+}
+#lip{
+color:black;
+
+}
+.s1
+{
+height:500px;
+width:300px;
+position:relative;
+}
+.s1 img{
+width:100%;
+height:100%;
+border-radius:50px;
+}
+.transition-image
+{
+position:absolute;
+top:0px;
+left:0px;
+opacity:0;
+transition:opacity 0.5s ease;
+
+}
+.transition-image:hover{
+opacity:1;
+}
+
+
+.s2
+{
+height:500px;
+width:300px;
+position:relative;
+}
+.s2 img{
+width:100%;
+height:100%;
+border-radius:50px;
+}
+.transition-image2
+{
+position:absolute;
+top:0px;
+left:0px;
+opacity:0;
+transition:opacity 0.5s ease;
+
+}
+.transition-image2:hover{
+opacity:1;
+}
+
+.s3
+{
+height:500px;
+width:300px;
+position:relative;
+z-index:1;
+}
+.s3 img{
+width:100%;
+height:100%;
+border-radius:50px;
+}
+.transition-image3
+{
+position:absolute;
+top:0px;
+left:0px;
+opacity:0;
+transition:opacity 0.5s ease;
+
+}
+.transition-image3:hover{
+opacity:1;
+}
+.s4
+{
+height:500px;
+width:300px;
+position:relative;
+z-index:1;
+}
+.s4 img{
+width:100%;
+height:100%;
+border-radius:50px;
+}
+.transition-image4
+{
+position:absolute;
+top:0px;
+left:0px;
+opacity:0;
+transition:opacity 0.5s ease;
+
+}
+.transition-image4:hover{
+opacity:1;
+}
+.wrap2{
+
+display:flex;
+justify-content:space-around;
+
+}
+
+</style>
+
+
+<body>
+
+<div class="navbar">
+
+<ul>
+<li><a href="myWebpage.html">Home</a></li>
+<li><a href="skincare.html">Skin Care</a></li>
+<li><a href="haircare.html">Hair Care</a></li>
+<li><a href="babycare.html">Baby Care</a></li>
+<li><a href="combo.html">Combo</a></li>
+<li><a href="#">View</a></li>
+
+<li><a href="ingre.html">Ingredients</a></li>
+<li><a href="tips.html">Tips</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="#con">Contact</a></li>
+<li><a href="login.html">Login/Signup</a></li>
+
+</ul>
+</div>
+<div class="whole">
+
+<div class="menus">
+<nav>
+
+</nav>
+</div>
+
+<div class="row">
+<div class="col">
+
+
+</div>
+
+
+<div class="col">
+
+</div>
+</div>
+</div>
+</div>
+<br><br>
+<fieldset>
+<h2> <center>KITS AND PACKS</center></h2>
+<div class="whole1">
+<div class="row1">
+<div class="col1">
+ <div class="card11">
+<h4>Anti Acne Kit</h4>
+<p>MRP ₹ 2,329.00</p>
+</div>
+
+<div class="card12">
+<h4>Lip Kit</h4>
+<p>MRP ₹ 2,000.00</p>
+</div>
+
+<div class="card13">
+<h4> Face Packs</h4>
+<p>MRP ₹ 1,469.00</p>
+</div>
+
+<div class="card14">
+<h4>  Foot Care Kit </h4>
+<p>MRP ₹ 1,000.00</p>
+</div>
+</div>
+<hr>
+<div class="col1">
+
+
+<div class="s1">
+<img src="combo3.JPG">
+<img class="transition-image" src="combo31.JPG">
+</div>
+</div>
+</div>
+</div><br><br><hr><br>
+<h2> <center>Baby care</center></h2><br>
+<div class="next2">
+
+<div class="image">
+<img src="b2.JPG" id="b1">
+</div>
+<div class="">
+<div class="box1">
+<img src="bab1.JPG" id="im1">
+<h4>Antioxidants: a secret for babies moisturise skin</h4>
+<p id="word">Dry skin is a normal process that happens with babies.
+In some cases, due to several factors, ageing accelerates.
+ There is a lot of bragging about the antioxidants in the market,
+ Use our product and keep your baby moisturised</p>
+
+</div>
+</div>
+
+</div><br><br><hr><br>
+<h2 id="lip"><center>LIP BALMS AND COMBO OFFERS</center></h1><br>
+<div class="wrap2">
+
+<div class="s1">
+<img src="combos41.JPG">
+<img class="transition-image" src="i4.JPG">
+</div>
+
+<div class="s2">
+<img src="combos3.JPG">
+<img class="transition-image2" src="combos31.JPG">
+</div>
+
+<div class="s3">
+<img src="combos2.JPG">
+<img class="transition-image3" src="combos21.JPG">
+</div>
+
+<div class="s4">
+<img src="combos4.JPG">
+<img class="transition-image4" src="i4.JPG">
+</div>
+</div><br><br>
+<div class="tt">
+<br>
+<h2>We love being Friends!</h2>
+
+<a href="https://www.instagram.com">instagram</a>|
+<a href="https://www.snapchat.com">snapchat</a>|
+<a href="https://www.pinterest.com">pinterest</a>|
+<a href="https://www.facebook.com">facebook</a>
+
+
+
+</div>
+</body>
+</html>

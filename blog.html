@@ -1,0 +1,514 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+<link href="myStylee.css" rel="stylesheet" type="text/css" />
+<meta charset="utf-8">
+<title>Articlepage</title>
+<style>
+
+
+#im1{
+width:390px;
+    height:250px;
+padding-left:5%;
+padding-top:5%;
+
+}
+#im3{
+
+padding-left:15%;
+padding-top:5%;
+border-radius:50%;
+}
+.whole
+{
+width:100%;
+height:100vh;
+background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(art1.JPEG);
+background-size:cover;
+background-position:center;
+padding-left:8%;
+padding-right:18%;
+box-sizing:border-box;
+
+}
+.menus
+{
+height:12%;
+align-items:center;
+}
+nav{
+float:right;
+}
+nav ul li
+{
+list-style:none;
+display:inline-block;
+margin-left:80px;
+}
+nav ul li a
+{
+text-decoration:none;
+font-size:25px;
+color:white;
+
+}
+nav ul li a:hover
+{
+color:black;
+}
+h1{
+color:white;
+font-size:80px;
+line-height:5px;
+}
+p{
+font-size:15px;
+color:white;
+line-height:18px;
+}
+.row{
+display:flex;
+align-items:center;
+height:85%;
+}
+
+.card{
+width:200px;
+height:230px;
+display:inline-block;
+border-radius:50PX;
+padding:15px 25px;
+box-sizing:border-box;
+cursor:pointer;
+margin:10px 15px;
+background-image:url(art1.JPEG);
+background-position:center;
+background-size:cover;
+justify-content:space-around;
+}
+
+.card:hover{
+transform:scale(1.3);
+transition:transform 2s;
+
+}
+.row1{
+display:flex;
+align-items:center;
+height:85%;
+}
+.col1{
+flex-basis :50%;
+overflow:hidden;
+}
+
+.wrap1{
+display:flex;
+justify-content:space-around;
+}
+.box1{
+height:500px;
+width:400px;
+background-color:#fed8a5;
+border-radius:30px;
+}
+.box2{
+height:500px;
+width:400px;
+background-color:#fed8a5;
+border-radius:30px;
+}
+.box3{
+height:500px;
+width:400px;
+background-color:#fed8a5;
+border-radius:30px;
+}
+p{
+font-size:15px;
+color:gray;
+line-height:18px;
+}
+p:hover
+{
+color:black;
+}
+.wrap2
+{
+display:flex;
+justify-content:space-around;
+}
+
+.s1
+{
+height:400px;
+width:300px;
+position:relative;
+}
+.s1 img{
+width:100%;
+height:100%;
+border-radius:50px;
+}
+.transition-image
+{
+position:absolute;
+top:0px;
+left:0px;
+opacity:0;
+transition:opacity 0.5s ease;
+
+}
+.transition-image:hover{
+opacity:1;
+}
+
+
+.s2
+{
+height:400px;
+width:300px;
+position:relative;
+}
+.s2 img{
+width:100%;
+height:100%;
+border-radius:50px;
+}
+.transition-image2
+{
+position:absolute;
+top:0px;
+left:0px;
+opacity:0;
+transition:opacity 0.5s ease;
+
+}
+.transition-image2:hover{
+opacity:1;
+}
+
+.s3
+{
+height:400px;
+width:300px;
+position:relative;
+z-index:1;
+}
+.s3 img{
+width:100%;
+height:100%;
+border-radius:50px;
+}
+.transition-image3
+{
+position:absolute;
+top:0px;
+left:0px;
+opacity:0;
+transition:opacity 0.5s ease;
+
+}
+.transition-image3:hover{
+opacity:1;
+}
+.s4
+{
+height:400px;
+width:300px;
+position:relative;
+z-index:1;
+}
+.s4 img{
+width:100%;
+height:100%;
+border-radius:50px;
+}
+.transition-image4
+{
+position:absolute;
+top:0px;
+left:0px;
+opacity:0;
+transition:opacity 0.5s ease;
+
+}
+.transition-image4:hover{
+opacity:1;
+}
+.rap{
+display:flex;
+}
+
+
+
+.flip-box {
+  background-color: white;
+  width: 250px;
+  height: 200px;
+  perspective: 1000px;
+   display:flex;
+  margin-left: 130px;
+}
+.change{
+font-size:20px;
+color:red;
+align-items:center;
+
+}
+
+.flip-box-inner {
+  position: relative;
+ /* width: 100%;
+  height: 100%; */
+  text-align: center;
+ 
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-box-front {
+  background-color: #f1f1f1;
+  color: #f1f1f1;
+}
+
+.flip-box-back {
+  background-color: #f1f1f1;
+  background-image:url(combo3.JPG);
+  color: black;
+  transform: rotateY(180deg);
+ 
+}
+
+.rap{
+display:flex;
+
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="navbar">
+
+<ul>
+<li><a href="myWebpage.html">Home</a></li>
+<li><a href="skincare.html">Skin Care</a></li>
+<li><a href="haircare.html">Hair Care</a></li>
+<li><a href="babycare.html">Baby Care</a></li>
+<li><a href="combo.html">Combo</a></li>
+<li><a href="view.html">View</a></li>
+<li><a href="ingre.html">Ingredients</a></li>
+<li><a href="tips.html">Tips</a></li>
+<li><a href="#">Blog</a></li>
+
+
+<li><a href="myWebpage.html">Contact</a></li>
+<li><a href="login.html">Login/Signup</a></li>
+
+</ul>
+</div>
+
+
+
+
+<div class="whole">
+
+
+
+<div class="row">
+<div class="col">
+<h1>JJ’s BLOG !!!
+</h1>
+
+ 
+</div>
+
+<div class="col">
+
+<div class="card1">
+<h4>Confidence </h4>
+<p style= "color:white;">Natural way of glowing is confidence</p>
+</div>
+
+<div class="card2">
+<h4>Consistency </h4>
+<p  style= "color:white;">A broad group of compounds that prevents skin cells from damage caused by oxidation and movement of free radicals.</p>
+</div>
+
+<div class="card3">
+<h4> Daily Habit </h4>
+<p  style= "color:white;">Your body produces a few types of antioxidants from the diet you consume.</p>
+</div>
+
+<div class="card4">
+<h4>Love Yourself </h4>
+<p  style= "color:white;">  The disturbance in this cycle of antioxidant production results in pre-mature ageing, skin loses its elasticity. There are skincare products that most brag about antioxidants in their products, but they fail. The primary antioxidants agents are
+• Vitamin E
+• Vitamin C</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="head">
+</div><br><br><h2><center>ARTICLES</center><h2>
+<div class="wrap1">
+<div class="box1">
+<img src="y1.jpg" id="im1"><br><br>
+<h4 style ="margin-left:10px;"> Antioxidants: a secret for youthful skin</h4>
+<p style ="margin-left:10px;">Ageing is a normal process that happens with age.
+In some cases, due to several factors, ageing accelerates.
+ There is a lot of bragging about the antioxidants in the market,
+ Use our product and get more young</p>
+
+</div>
+
+<div class="box2">
+<img src="n4.jpg" id="im2"><br><br>
+<h4 style ="margin-left:10px;">How to deal with breakouts during periods</h4>
+<p style ="margin-left:10px;">
+ It can be frustrating to see your face occupied with acne every month. It sneaks and settles every month.
+ Use our product and get more young</p>
+</div>
+<div class="box3">
+<img src="article1.JFIF" id="im3"><br><br>
+<h4 style ="margin-left:10px;">More the water intake, more the skin glows</h4>
+<p style ="margin-left:10px;">
+When we ask a celebrity about their secret to glowing skin, the first and foremost answer we get is to drink enough water.</p>
+</div>
+
+</div>
+<br>
+<div class="wrap2">
+<div class="box1">
+<img src="z1.jpg"><br><br>
+<h4 style ="margin-left:10px;">Advantages of organic sesame oil for your baby</h4>
+<p style ="margin-left:10px;">The sesame oil is rich in antioxidants that help rigorous skin cell growth and also have the ability to fight unstable molecule that damages the delicate skin of your baby. In addition, organic sesame oil is non- comedogenic which means it doesn’t clog the pores of your baby’s skin and allow them to repair</p>
+
+</div>
+
+<div class="box2">
+<img src="z2.jpg"><br><br>
+<h4 style ="margin-left:10px;">Get timeless beauty with regular skincare</h4>
+<p style ="margin-left:10px;">
+ JJ’s 100% natural skincare range because they have a bucket full of organic handcrafted products. </p>
+</div>
+<div class="box3">
+<img src="z3.jpg" id="im3"><br><br>
+<h4 style ="margin-left:10px;">One magical herb for all hair woes</h4>
+<p style ="margin-left:10px;">
+ Healthy, strong, and lustrous hair is one thing we constantly struggle for. But if we say one herb can ease up your struggle</p>
+</div>
+
+</div
+<br><br><br><hr>
+<fieldset>
+<h2><center>RELATED PRODUCTS</center></h2><br>
+<div class="wrap2">
+
+<div class="s1">
+<img src="combo1.JPG">
+<img class="transition-image" src="combo11.JPG">
+<h3> <center>  Face Creams  </center>   </h3>
+</div>
+
+<div class="s2">
+<img src="combo21.JPG">
+<img class="transition-image2" src="combo2.JPG">
+<h3> <center>  Lip Balms  </center>   </h3>
+</div>
+
+<div class="s3">
+<img src="combo31.JPG" >
+<img class="transition-image3" src="combo3.JPG">
+<h3> <center>  Toner and Facepack  </center>   </h3>
+</div>
+
+<div class="s4">
+<img src="combo4.JPG">
+<img class="transition-image4" src="combo41.JPG">
+<h3> <center> Foot Kit   </center>   </h3>
+</div>
+</div></fieldset> <br><br><hr>
+<br> <h2><center>STARS WHO SKINCARED </center> </h2>
+
+<div class="rap">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="star1.JFIF" >
+    </div>
+
+    <div class="flip-box-back">
+      <p class ="change">SAMANTHA- wonderful product<img style="height:200px;width:200px;"src="combo1.jpg"></p>
+    </div>
+
+
+  </div>
+ 
+ 
+  </div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="star2.JFIF" >
+    </div>
+
+    <div class="flip-box-back">
+      <p class ="change">HANSIKA- killer product<img style="height:200px;width:200px;"src="combo2.JPG"></p>
+    </div>
+
+
+  </div>
+ </div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img style="height:250px;"src="star3.JFIF" >
+    </div>
+
+    <div class="flip-box-back">
+      <p class ="change">AISHWARYA- beautiful product<img style="height:200px;width:200px;"src="combo4.JPG"></p>
+    </div>
+
+
+  </div>
+ </div>
+ 
+</div>
+<br><br><br><br>
+<div class="tt">
+<br>
+<h2>We love being Friends!</h2>
+
+<a href="https://www.instagram.com">instagram</a>|
+<a href="https://www.snapchat.com">snapchat</a>|
+<a href="https://www.pinterest.com">pinterest</a>|
+<a href="https://www.facebook.com">facebook</a>
+
+</div>
+
+</body>
+</html>
